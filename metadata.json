@@ -1,0 +1,7 @@
+{
+  "name": "R J Exports and Agro Services",
+  "description": "Premium import-export corporate portal specializing in high-end agro products, fresh produce, and animal feeds, serving global markets including UAE, Kenya, and Bangladesh.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
