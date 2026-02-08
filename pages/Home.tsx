@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Truck, BarChart3, Users, ArrowRight, Star } from 'lucide-react';
+import { ShieldCheck, Truck, BarChart3, ArrowRight, Star, Wheat } from 'lucide-react';
 import { PRODUCTS } from '../constants';
 
 const Home: React.FC = () => {
@@ -30,7 +30,7 @@ const Home: React.FC = () => {
               <span className="text-orangepulp">Agricultural Exports</span>
             </h1>
             <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
-              From the fertile lands of Maharashtra to the global market. Delivering excellence in Fresh Produce, Animal Feeds, and Processed Foods across UAE, Kenya, and Vietnam.
+              From the fertile lands of Maharashtra to the global market. Delivering excellence in Millets, Pulses, Fresh Produce, and Animal Feeds.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link to="/products" className="bg-orangepulp hover:bg-white hover:text-redvelvet text-white px-8 py-5 rounded-xl font-bold text-lg transition-all text-center flex items-center justify-center gap-2 shadow-xl">
@@ -128,7 +128,7 @@ const Home: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-redvelvet via-transparent to-transparent opacity-90"></div>
                 <div className="absolute bottom-0 left-0 p-8 text-white">
                   <span className="text-[10px] font-bold uppercase tracking-widest bg-orangepulp px-2 py-1 rounded mb-2 inline-block">
-                    {product.category}
+                    {product.category.replace('-', ' & ')}
                   </span>
                   <h4 className="text-2xl font-bold mb-2">{product.name}</h4>
                   <p className="text-sm text-gray-200 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-4 group-hover:translate-y-0 duration-300">

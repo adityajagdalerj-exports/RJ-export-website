@@ -9,6 +9,7 @@ export const NAVIGATION: NavItem[] = [
     href: '/products',
     children: [
       { label: 'Animal Feeds', href: '/products/agro' },
+      { label: 'Millets & Pulses', href: '/products/millets-pulses' },
       { label: 'Fresh Produce', href: '/products/fresh' },
       { label: 'Processed Foods', href: '/products/processed' }
     ]
@@ -18,21 +19,31 @@ export const NAVIGATION: NavItem[] = [
 ];
 
 export const PRODUCTS: Product[] = [
+ 
   // Animal Feeds
   { 
     id: 'a1', 
     name: 'Premium Animal Feed', 
     category: 'agro', 
-    image: 'https://lh3.googleusercontent.com/d/1w7t4hnz_py4eSXvyoJdElXvwtKWg6Y2B=w1000?auto=format&fit=crop&q=80&w=800', 
+    image: 'https://lh3.googleusercontent.com/d/1MUjNPSWFG1SAC_xfsvusbmb7vzJKz8UH=w1000?auto=format&fit=crop&q=80&w=800', 
     description: 'High-protein, scientifically balanced pellets formulated for optimal dairy production and herd health.' 
   },
 
+ // Millets & Pulses (Barshi Specialties)
+  { 
+    id: 'mp1', 
+    name: 'Millets: Jowar (Sorghum) And Pulses: Tur Dal (Pigeon Pea)', 
+    category: 'millets-pulses', 
+    image: 'https://lh3.googleusercontent.com/d/19lyZMKkTlXbfhkJDd-EBJc-pmY7tMFPe=w1000?auto=format&fit=crop&q=80&w=800', 
+    description: "Sourced from Barshi’s premier APMC hub, our export-grade Tur Dal and high-purity white Jowar deliver Maharashtra’s finest agricultural excellence to the global market." 
+  },
+
   // Fresh Produce
-  { id: 'p1', name: 'Fresh Fruits', category: 'fresh', image: 'https://lh3.googleusercontent.com/d/1kjSn6m50MCHdNuaUxQzYernIedQv2FvG=w1000?auto=format&fit=crop&q=80&w=800', description: 'Superior quality.' },
-  { id: 'p5', name: 'Red Onions', category: 'fresh', image: 'https://lh3.googleusercontent.com/d/1zdiK4OX5tmqbeDhBTuZISFSoiz7KJFg9=w1000?auto=format&fit=crop&q=80&w=800', description: 'Pungent and crispy, sorted and graded for export.' },
+  { id: 'p1', name: 'Fresh Fruits', category: 'fresh', image: 'https://lh3.googleusercontent.com/d/1kjSn6m50MCHdNuaUxQzYernIedQv2FvG=w1000?auto=format&fit=crop&q=80&w=800', description: 'Superior quality selection of seasonal fruits, sorted and packed for international transit.' },
+  { id: 'p5', name: 'Red Onions', category: 'fresh', image: 'https://lh3.googleusercontent.com/d/1zdiK4OX5tmqbeDhBTuZISFSoiz7KJFg9=w1000?auto=format&fit=crop&q=80&w=800', description: 'Pungent and crispy red onions, sourced from the best farms, sorted and graded for export.' },
   
   // Processed
-  { id: 'pr1', name: 'Frozen Chicken', category: 'processed', image: 'https://lh3.googleusercontent.com/d/15HgfHuVaPfvu5-4VbJhiIptpuEw_Wzhn=w1000?auto=format&fit=crop&q=80&w=800', description: 'Halal certified, blast frozen for freshness.' }
+  { id: 'pr1', name: 'Frozen Chicken', category: 'processed', image: 'https://lh3.googleusercontent.com/d/15HgfHuVaPfvu5-4VbJhiIptpuEw_Wzhn=w1000?auto=format&fit=crop&q=80&w=800', description: 'Halal certified, blast frozen for freshness and longevity during long-haul shipping.' }
 ];
 
 export const COUNTRIES_SERVED = ['UAE', 'Kenya', 'Vietnam', 'Nepal', 'Bhutan', 'Bangladesh'];

@@ -254,8 +254,9 @@ const Enquiry: React.FC = () => {
                     onChange={(e) => setFormData({...formData, productOfInterest: e.target.value})}
                   >
                     <option value="">Select Category</option>
-                    <option value="Fresh Produce">Fresh Produce</option>
                     <option value="Animal Feed">Animal Feed</option>
+                    <option value="Millets & Pulses">Millets & Pulses</option>
+                    <option value="Fresh Produce">Fresh Produce</option>
                     <option value="Processed Food">Processed Food</option>
                   </select>
                 </div>

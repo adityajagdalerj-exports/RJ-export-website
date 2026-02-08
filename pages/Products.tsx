@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { PRODUCTS } from '../constants';
 import { CategoryType } from '../types';
-import { LayoutGrid, Leaf, Beef, Sparkles, ShoppingBag } from 'lucide-react';
+import { LayoutGrid, Leaf, Beef, Sparkles, ShoppingBag, Wheat } from 'lucide-react';
 
 const Products: React.FC = () => {
   const { category } = useParams<{ category?: string }>();
@@ -16,11 +16,10 @@ const Products: React.FC = () => {
   const categories = [
     { id: 'all', label: 'All Products', icon: <LayoutGrid size={18}/> },
     { id: 'agro', label: 'Animal Feeds', icon: <Beef size={18}/> },
+    { id: 'millets-pulses', label: 'Millets & Pulses', icon: <Wheat size={18}/> },
     { id: 'fresh', label: 'Fresh Produce', icon: <Leaf size={18}/> },
     { id: 'processed', label: 'Processed Foods', icon: <Sparkles size={18}/> },
   ];
-
-  const currentCategoryLabel = categories.find(c => c.id === (category || 'all'))?.label;
 
   return (
     <div className="pt-20 pb-24">
@@ -60,7 +59,7 @@ const Products: React.FC = () => {
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
                 />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-redvelvet shadow-sm">
-                  {product.category}
+                  {product.category.replace('-', ' & ')}
                 </div>
               </div>
               <div className="p-8 flex-grow flex flex-col">

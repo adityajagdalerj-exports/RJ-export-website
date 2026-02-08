@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Mail, Phone, ExternalLink, Linkedin, Facebook, Twitter } from 'lucide-react';
@@ -28,9 +27,8 @@ const Footer: React.FC = () => {
               Established in 2023, we are a global leader in premium agricultural exports, bridging the gap between local quality and international markets with integrity.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-redvelvet transition-colors"><Linkedin size={18}/></a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-redvelvet transition-colors"><Facebook size={18}/></a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-redvelvet transition-colors"><Twitter size={18}/></a>
+              <a className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-redvelvet transition-colors"><Linkedin size={18}/></a>
+              <a className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-redvelvet transition-colors"><Facebook size={18}/></a>
             </div>
           </div>
 
@@ -38,8 +36,9 @@ const Footer: React.FC = () => {
           <div className="space-y-6">
             <h3 className="text-lg font-bold border-b border-gray-800 pb-2">Global Trade</h3>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li><Link to="/products/fresh" className="hover:text-orangepulp flex items-center gap-2"><ExternalLink size={12}/> Fresh Produce</Link></li>
               <li><Link to="/products/agro" className="hover:text-orangepulp flex items-center gap-2"><ExternalLink size={12}/> Animal Feeds</Link></li>
+              <li><Link to="/products/millets-pulses" className="hover:text-orangepulp flex items-center gap-2"><ExternalLink size={12}/> Millets & Pulses</Link></li>
+              <li><Link to="/products/fresh" className="hover:text-orangepulp flex items-center gap-2"><ExternalLink size={12}/> Fresh Produce</Link></li>
               <li><Link to="/products/processed" className="hover:text-orangepulp flex items-center gap-2"><ExternalLink size={12}/> Processed Foods</Link></li>
               <li><Link to="/logistics" className="hover:text-orangepulp flex items-center gap-2"><ExternalLink size={12}/> Logistics Network</Link></li>
               <li><Link to="/enquiry" className="hover:text-orangepulp flex items-center gap-2"><ExternalLink size={12}/> Global Enquiry</Link></li>

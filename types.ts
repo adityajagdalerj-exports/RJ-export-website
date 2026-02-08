@@ -1,5 +1,5 @@
 
-export type CategoryType = 'fresh' | 'agro' | 'processed';
+export type CategoryType = 'fresh' | 'agro' | 'processed' | 'millets-pulses';
 
 export interface Product {
   id: string;
